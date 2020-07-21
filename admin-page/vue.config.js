@@ -24,7 +24,7 @@ module.exports = {
    * In most cases please use '/' !!!
    * Detail: https://cli.vuejs.org/config/#publicpath
    */
-  publicPath: '/',
+  publicPath: '/admin',
   outputDir: '../admin-api/src/main/resources/static',
   assetsDir: '',
   lintOnSave: process.env.NODE_ENV === 'development',
