@@ -25,4 +25,6 @@ public class BaseDomain {
     protected String updateUser;
     /**版本*/
     protected Integer version;
+    /**备注*/
+    protected String remarks;
 }

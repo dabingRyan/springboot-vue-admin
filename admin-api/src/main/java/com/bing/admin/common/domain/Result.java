@@ -9,6 +9,6 @@ import lombok.Data;
  **/
 @Data
 public class Result {
-    private String code;
-    private String message;
+    protected String code;
+    protected String message;
 }
