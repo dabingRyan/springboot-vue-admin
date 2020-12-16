@@ -4,15 +4,11 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <!--引入属性配置文件-->
-    <properties resource="application.yml" />
-
-    <!-- mysql driver path -->
-    <classPathEntry location="D:\我的文件\保险研发\code\biz-bgw\biz-bgw\biz-bgw-qc-web\build\lib\mysql-connector-java-5.1.21.jar" />
 
     <!--数据库配置-->
     <context id="MysqlTables" targetRuntime="MyBatis3">
-        <jdbcConnection driverClass="${jdbc.driver}" connectionURL="${jdbc.url}" userId="${jdbc.userName}" password="${jdbc.password}">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://10.102.40.30:3306/bingboot"
+                        userId="root" password="bing2019!">
         </jdbcConnection>
 
         <javaTypeResolver >
@@ -35,8 +31,8 @@
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
-        <table tableName="product_sale_record" domainObjectName="ProductSaleRecord" >
-            <!---->
+        <table tableName="sys_permission" domainObjectName="ProductSaleRecord" >
+            <!--是否使用字段名作为属性名-->
             <!--<property name="useActualColumnNames" value="true"/>-->
             <!--text字段和String进行映射-->
             <!--<columnOverride column="text_column" jdbcType="VARCHAR" />-->
