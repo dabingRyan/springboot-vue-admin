@@ -31,7 +31,7 @@ public class LoginController {
         return result;
     }
 
-    @GetMapping("getToken")
+    @GetMapping("userInfo")
     public Result<UserInfoVO> login(@RequestParam("token") String token) {
         Result<UserInfoVO> result = new Result<>();
         UserInfoVO userInfoVO = new UserInfoVO();
